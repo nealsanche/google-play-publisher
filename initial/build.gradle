@@ -1,1 +1,21 @@
 apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.apis:google-api-services-oauth2:v1-rev77-1.19.0'
+    compile 'com.google.apis:google-api-services-androidpublisher:v2-rev2-1.19.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.google.api-client:google-api-client-java6:1.19.0'
+}
+
+apply plugin: 'application'
+mainClassName = 'publish.Publisher'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'publish.Publisher'
+    }
+}
