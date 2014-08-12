@@ -7,7 +7,7 @@ You need to build it:
 ```
 
 You need to create a Google API Console project, create an oauth2 'Other' application and download 
-the JSON file for it.
+the JSON file for it. Save that JSON file as `publisher.json` in the app directory.
 
 You need to link the Google API Console project to a Google Play publisher account.
 
